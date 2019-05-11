@@ -1,0 +1,13 @@
+{
+  "name": "更换必应搜索背景图片",
+  "version": "1.0",
+  "description": "更换必应搜索背景图片",
+  "content_scripts":[
+	{
+		"matches":["*://*.bing.com/*"],
+		"js":["doMain.js"],
+		"run_at": "document_idle"
+	}
+  ],
+  "manifest_version": 2
+}
